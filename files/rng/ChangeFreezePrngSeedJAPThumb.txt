@@ -70,7 +70,7 @@ address = 0x03005AE0
 ; b #0x4 ; E000
 0x4807FFFF
 ; FFFF @ bad filler
-; ldr r0, [pc, #0x1C] ; 4807 @ r0 = PRNG state (0x0x03005AE0)
+; ldr r0, [pc, #0x1C] ; 4807 @ r0 = PRNG state (0x03005AE0)
 0x4A0A4908
 ; ldr r1, [pc, #0x20] ; 4908 @ r1 = uuUUvvVV
 ; ldr r2, [pc, #0x28] ; 4A0A @ r2 = wwWWzzZZ
