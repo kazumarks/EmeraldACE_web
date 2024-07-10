@@ -4,11 +4,13 @@
 
 ; ⚠️ This is code is written in Thumb. Do not execute with an ARM Pokémon (like 0x615 or 0x6789)!
 
-; This code likely needs a real GBA bios to work correctly.
-; This will clone a Pokémon on Box 9, Slot 1, leave it empty to declone and populate following slots with Pokemon to remove.
-; You should not be requesting quantities that cause clones to populate Box 12 or later, they can cause the game to crash.
+; ⚠️ This code likely needs a real GBA bios to work correctly.
+; ⚠️ You should not be requesting quantities that cause clones to populate Box 12 or later, they can cause the game to crash.
+; ⚠️ Certain quantities (such as 12) are not available due to charset limitations
+; ℹ️ This will clone a Pokémon on Box 9, Slot 1, leave it empty to declone and populate following slots with Pokemon to remove.
 
 num_copy = 1
+
 swi_param = 0x4000000 | (((num_copy * 0x50)/4) & 0x1FFFFF) ; Refer to GBATek for more information on CpuSet parameters
 @@
 
