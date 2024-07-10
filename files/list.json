@@ -431,5 +431,10 @@
     "ita": "pkmn/ReadPkrus.txt",
     "jap": "pkmn/ReadPkrusJAP.txt",
     "cat": ["pkmn"]
+  },
+  {
+    "name": "Mass Clone Pokemon (for 0x085F)",
+    "jap": "misc/MassClonePokemonJAPThumb.txt",
+    "cat": ["misc"]
   }
 ]
